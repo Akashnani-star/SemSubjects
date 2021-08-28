@@ -1,0 +1,19 @@
+.td{
+	text-align: center;
+}
+th{
+	color: red;
+	font-family: arial;
+	font-size: 24px;
+}
+
+td{
+	color: blue;
+	font-family: arial;
+	font-size: 24px;
+}
+
+table{
+	height: 80vh;
+	width: 80vw;
+}

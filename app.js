@@ -7,11 +7,20 @@ for(const sem in myJsonObj){
 	tr = document.createElement("tr");
 	th = document.createElement("th");
 	th.innerText = sem;
+	th.classList.add("td");
 	tr.appendChild(th);
+	const len = myJsonObj[sem].length;
 	myJsonObj[sem].forEach((cur,index,arr)=>{
 		td = document.createElement("td");
+		td.classList.add("td");
 		td.innerText = cur;
 		tr.appendChild(td);
 	});
+	for(let i=len;i<4;i++){
+		td = document.createElement("td");
+		td.classList.add("td");
+		td.innerText = " ---- ";
+		tr.appendChild(td);
+	}
 	mySubjectsTable.appendChild(tr);
 }
